@@ -51,3 +51,7 @@ It also includes a wonderful XmlHttpRequest method!
     });
     
 There's also a **data** option that accepts normal url parameters (_?sortBy=id_).
+
+***
+
+Currently developed by Tommy Bergeron / 2012.
