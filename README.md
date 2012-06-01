@@ -7,6 +7,12 @@ Cry no more because **spiderman.js** is here to help you!
 
 ***
 
+The goal here is to dynamically require file, WHEN you actually need it/them instead of loading everything at once and lose a considerable amount of performance.
+
+This library can also wait for everything to be loaded before doing your business which gives the developer the ability to run scripts syncrhonously AND asynchronously if they want to.
+
+***
+
 ## Usage:
 
 1) Include the file in your template (last _script_ tag ever, I promise!):
