@@ -1,7 +1,7 @@
 spiderman.js
 ============
 
-This is pretty straightforward, aren't you tired of having to add infinite amounts of <script /> tags at the end of your HTML templates?
+This is pretty straightforward, aren't you tired of having to add infinite amounts of _script_ tags at the end of your HTML templates?
 
 Cry no more because **spiderman.js** is here to help you!
 
@@ -9,7 +9,7 @@ Cry no more because **spiderman.js** is here to help you!
 
 ## Usage:
 
-1) Include the file in your template (last <script /> tag ever, I promise!):
+1) Include the file in your template (last _script_ tag ever, I promise!):
 <script src="js/spiderman.js"></script>
 
 2) Require other files like a boss!
@@ -28,7 +28,7 @@ Cry no more because **spiderman.js** is here to help you!
   
 ### Or simply require one file:
 
-    require("js/handlebars", function() {
+    require(["js/handlebars"], function() {
         // the rest of your wonderful code goes here.
     });
     
