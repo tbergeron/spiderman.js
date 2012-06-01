@@ -1,17 +1,20 @@
-spiderman.js
+## spiderman.js
 ============
+Currently developed by Tommy Bergeron / 2012.
+
+## What's spiderman.js?
 
 This is pretty straightforward, aren't you tired of having to add infinite amounts of _script_ tags at the end of your HTML templates?
 
 Cry no more because **spiderman.js** is here to help you!
 
-***
+
+## Goals:
 
 The goal here is to dynamically require file, WHEN you actually need it/them instead of loading everything at once and lose a considerable amount of performance.
 
 This library can also wait for everything to be loaded before doing your business which gives the developer the ability to run scripts syncrhonously AND asynchronously if they want to.
 
-***
 
 ## Usage:
 
@@ -51,7 +54,3 @@ It also includes a wonderful XmlHttpRequest method!
     });
     
 There's also a **data** option that accepts normal url parameters (_?sortBy=id_).
-
-***
-
-Currently developed by Tommy Bergeron / 2012.
