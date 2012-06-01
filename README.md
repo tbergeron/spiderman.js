@@ -1,5 +1,7 @@
 ## spiderman.js
 ============
+require() on the client-side like spiderman!
+
 Currently developed by Tommy Bergeron / 2012.
 
 ## What's spiderman.js?
