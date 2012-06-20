@@ -1,25 +1,27 @@
+var globalEval = this.execScript || eval;
+
 // Dynamically require files
 // files = []
 var require = function(files, callback){
-	var requireCount = 0;
+  var requireCount = 0;
 
-	var requireFile = function(filePath) {
-		requireCount++;
+  var requireFile = function(filePath) {
+    requireCount++;
 
-		xhr({ uri: filePath + '.js', method: 'get' }, function(response){
-			globalEval(response);
+        xhr({ uri: filePath + '.js?r=' + Math.random(), method: 'get' }, function(response){
+      globalEval(response);
 
-			requireCount--;
+      requireCount--;
 
-			if (requireCount === 0){
-				callback();
-			}
-		});		
-	};
+      if (requireCount === 0){
+        callback();
+      }
+    });   
+  };
 
-	files.forEach(function(file){
-		requireFile(file);
-	});
+  files.forEach(function(file){
+    requireFile(file);
+  });
 };
 
 // XmlHttpRequest
